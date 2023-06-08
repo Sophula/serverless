@@ -36,7 +36,6 @@ resource "aws_db_snapshot" "rds_snapshot" {
   db_snapshot_identifier = "rds-university-snapshot"
 }
 
-/*
 # Move the DB snapshot to S3 Glacier
 resource "aws_glacier_vault" "glacier_vault" {
   name = "rds-university-backup-glacier-vault"
@@ -63,4 +62,3 @@ EOF
     command = "aws glacier upload-archive --vault-name ${aws_glacier_vault.glacier_vault.name} --body ${aws_db_snapshot.rds_snapshot.id}"
   }
 }
-*/
