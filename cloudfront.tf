@@ -80,7 +80,7 @@ resource "aws_cloudfront_distribution" "university_cloudfront_distribution" {
   restrictions {
     geo_restriction {
       restriction_type = "whitelist"
-      locations        = ["US", "CA", "GB", "DE"]
+      locations        = [""]
     }
   }
   viewer_certificate {
