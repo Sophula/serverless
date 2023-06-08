@@ -4,7 +4,6 @@ resource "aws_s3_bucket" "bucket" {
 
 }
 
-/*
 # Create S3 bucket policy to allow public read access
 resource "aws_s3_bucket_policy" "bucket-policy" {
   bucket = aws_s3_bucket.bucket.id
@@ -23,7 +22,6 @@ resource "aws_s3_bucket_policy" "bucket-policy" {
 }
 EOF
 }
-*/
 
 # Create a CloudFront distribution
 resource "aws_cloudfront_distribution" "university_cloudfront_distribution" {
